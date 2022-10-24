@@ -1,0 +1,31 @@
+.file-upload-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.file-choose-button{
+    width: 200px;
+    height: 200px;
+    background-color: #d1d1e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.file-choose-button-selected{
+    background-color: #a6a6c2;
+}
+
+.file-upload-button{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
