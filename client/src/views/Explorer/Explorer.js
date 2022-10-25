@@ -1,12 +1,13 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from "axios"
 
 import "./Explorer.css"
+import FilePreview from '../../components/FilePreview/FilePreview';
 
 function Explorer() {
   const [files, setFiles] = useState([]);
-  useEffect(()=>{
-    async function getData(){
+  useEffect(() => {
+    async function getData() {
       const response = await axios.post('/contents')
       setFiles(response.data)
       console.log(response.data)
@@ -19,9 +20,7 @@ function Explorer() {
       {
         files.map((file, index) => {
           return (
-            <div key={index}>
-              <img src={file.download_url}  style={{height: "100px"}}/>
-            </div>
+            <FilePreview key={index} file={file} />
           )
         })
       }

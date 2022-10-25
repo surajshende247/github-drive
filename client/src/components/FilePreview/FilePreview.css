@@ -1,0 +1,52 @@
+.file-preview-container {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  position: relative;
+}
+
+.file-preview-img {
+  display: block;
+  margin: auto;
+  height: 150px;
+  max-width: 150px;
+  margin-top: 20px;
+}
+
+.file-preview-footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.file-preview-footer-link {
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 200px;
+}
+
+.file-preview-footer:hover {
+  background-color: #efeff5;
+}
+
+.file-preview-ico {
+  height: 25px;
+}
+
+.file-preview-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  cursor: pointer;
+}
