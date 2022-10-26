@@ -14,16 +14,23 @@ function Explorer() {
     }
     getData()
   }, [])
+
   return (
     <div>
       <h1>Explorer</h1>
-      {
-        files.map((file, index) => {
-          return (
-            <FilePreview key={index} file={file} />
-          )
-        })
-      }
+      <div className="container">
+        <div className="row">
+          {
+            files.map((file, index) => {
+              return (
+                <div className="col" key={index} >
+                  <FilePreview file={file} />
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
     </div>
   )
 }
