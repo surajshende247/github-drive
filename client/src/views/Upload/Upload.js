@@ -15,7 +15,7 @@ function App() {
     const file = event.target.files[0]
     const base64 = await convertBase64(file)
     const splitBase64 = base64.replace(/^data:([A-Za-z-+/]+);base64,/, '');
-    setFileName(file.name);
+    setFileName(encodeURIComponent(file.name));
     setFileContent(splitBase64)
     setFileSelected(true);
   }
